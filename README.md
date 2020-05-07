@@ -142,5 +142,5 @@ Use the "usercall" call convention with "@<register_name>" to declare args & the
 Analyze the block layout before diving into ASM code. `Layout view` is available on many disassemblers.  
 
 ### Tip 30
-> Βetter than anything technical I can share: RE isn’t a 1337 h4ck3r only reserved field! Like anything else: It’s open to everyone! And like any skill, "just" enjoy it, work hard, and you’ll get it.
+> ***"Βetter than anything technical I can share: RE isn’t a 1337 h4ck3r only reserved field! Like anything else: It’s open to everyone! And like any skill, "just" enjoy it, work hard, and you’ll get it."***
 
