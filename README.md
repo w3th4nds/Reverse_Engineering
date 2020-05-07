@@ -1,7 +1,7 @@
 # Reverse Engineering Tips - Write ups - Challenges
 
-## Tips (from [@va_start](https://twitter.com/va_start))
-[Full guide](https://blog.vastart.dev/2020/04/guys-30-reverse-engineering-tips-tricks.html?m=1) 
+## Tips (from [@va_start](https://twitter.com/va_start) - [Full guide](https://blog.vastart.dev/2020/04/guys-30-reverse-engineering-tips-tricks.html?m=1))
+
 
 ### Tip 1
 Long branch-less functions w/many `xors` & `rols` are usually `hash` functions. (e.g MD5 hash)
