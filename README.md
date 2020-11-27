@@ -8,28 +8,28 @@ Long branch-less functions w/many `xors` & `rols` are usually `hash` functions. 
 
 ### Tip 2
 Building on **tip 1**, after finding a hash function, google its constant to identify the exact hash algorithm.  
-[Images](https://twitter.com/va_start/status/1245656402862854144/photo/1)  
+![Images](https://twitter.com/va_start/status/1245656402862854144/photo/1)  
 
 ### Tip 3
 Find the function controlling authentication in any exe by diff'ing the execution trace of a valid vs failed login. Traces will split right after the auth check.  
-[Images](https://twitter.com/va_start/status/1246018981321900032/photo/1)
+![Images](https://twitter.com/va_start/status/1246018981321900032/photo/1)
 
 ### Tip 4
 Use a function's neighboring code to understand its functionality:
 Devs group related funcs together && compilers like to keep the order of funcs from src to exe ⇒ related funcs are closely grouped in the exe.  
-[Images](https://twitter.com/va_start/status/1246376443657019393/photo/1)
+![Images](https://twitter.com/va_start/status/1246376443657019393/photo/1)
 
 ### Tip 5
 Hate updating breakpoint addrs each time a module loads w/a new base? Patch the `exe/dll` header to disable the DYNAMIC_BASE flag for a static base addr.  
-[link](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format#dll-characteristics)  
+![link](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format#dll-characteristics)  
 
 ### Tip 6
 When reversing C++: Use `virtuailor` to *automatically* create class vtables & add xrefs to virtual funcs. It uses runtime inspection to evaluate func addrs to do its magic.    
-[Virtuailor](https://github.com/0xgalz/Virtuailor)  
+![Virtuailor](https://github.com/0xgalz/Virtuailor)  
 
 ### Tip 7
 Reversing is more fun w/symbols. If symbols are stripped, try looking for symbols in older versions, versions for other OSs, beta builds, and the mobile app versions. If still no symbols, check which has the most debug prints.  
-[Images](https://twitter.com/va_start/status/1247387110761512961/photo/1)
+![Images](https://twitter.com/va_start/status/1247387110761512961/photo/1)
 
 ### Tip 8
 Want a faster way to open IDA on your exe? 
@@ -76,13 +76,13 @@ Find which base addr results in the most calls "landing" on beginnings of functi
 
 ### Tip 19
 Found a bunch of strings, but no xref to their use? You probably found a str array: the strs are accessed w/an offset from the 1st str (array base), which will have an xref.  
-[Images](https://twitter.com/va_start/status/1251775461912449024/photo/1)
+![Images](https://twitter.com/va_start/status/1251775461912449024/photo/1)
 
 ### Tip 20
 **GDB TIPS EDITION**
 The ability to break on reading/writing memory is well known, BUT
 did you know you can break on a write to a register?!
-[watch](https://i.imgur.com/NCrGFeD.png) 
+![watch](https://i.imgur.com/NCrGFeD.png) 
 
 Anytime ***GDB*** prints $<number>, it is actually creating a new variable you can use:
 [call](https://i.imgur.com/qrNCtng.png)  
@@ -91,7 +91,7 @@ Anytime ***GDB*** prints $<number>, it is actually creating a new variable you c
 * use `set`
 * `call` memcpy/strcpy
 * write data from a file to memory with `restore`
-[set_call_restore](https://i.imgur.com/1UGBEDr.png)
+![set_call_restore](https://i.imgur.com/1UGBEDr.png)
 
 ### Tip 21
 Trick to help find libc functions: Exploit the xref count
