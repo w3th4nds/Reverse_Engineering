@@ -85,7 +85,7 @@ did you know you can break on a write to a register?!
 ![watch](https://i.imgur.com/NCrGFeD.png) 
 
 Anytime ***GDB*** prints $<number>, it is actually creating a new variable you can use:
-[call](https://i.imgur.com/qrNCtng.png)  
+![call](https://i.imgur.com/qrNCtng.png)  
 
 3 ways to write to memory in GDB (commands in back-ticks):
 * use `set`
